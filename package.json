@@ -1,0 +1,15 @@
+{
+  "name": "crud-1",
+  "version": "1.0.0",
+  "description": "CRUD simple avec méthodes synchrone et asynchrone",
+  "main": "index.js",
+  "dependencies": {
+    "font-awesome": "^4.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "guillaume@owlab.io",
+  "license": "MIT"
+}

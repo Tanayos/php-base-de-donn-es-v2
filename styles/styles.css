@@ -1,0 +1,210 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 16px;
+}
+body {
+    font-family: Avenir;
+    position: relative;
+    padding: 20px;
+}
+.title {
+    color: dodgerblue;
+    font-size: 1.3rem;
+    margin: 20px 0;
+}
+.f-col .btn {
+    display: block;
+}
+.btn {
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: .3rem;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 1rem;
+    justify-content: center;
+    margin: 20px 0;
+    min-height: 32px;
+    padding: 8px;
+    text-align: center;
+}
+.btn:hover {
+    background-color: dodgerblue;
+    color: white;
+}
+.clickable {
+    cursor: pointer;
+}
+.f-row, .f-col {
+    display: flex;
+}
+.f-col {
+    flex-direction: column;
+}
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 640px;
+    margin: 20px 0;
+    min-width: 320px;
+}
+.controls input[type=text] {
+    margin-bottom: 10px;
+    width: 100%;
+}
+p {
+    box-shadow: -0.9px 0.1px 6.1px 0.2px #696666;
+    border-radius: .1rem;
+    max-width: 720px;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: justify;
+}
+p:empty {
+    display: none;
+}
+table {
+  border-collapse: collapse;
+}
+td, th {
+  border: 2px solid black;
+  height: 42px;
+  width: 42px;
+  padding: 8px;
+  text-align: center;
+}
+a {
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+}
+label[for] {
+    cursor: pointer;
+}
+input[type=checkbox] {
+  cursor: pointer;
+}
+[disabled] {
+    cursor: not-allowed;
+}
+.input,
+input[type=tel],
+input[type=mail],
+input[type=text] {
+    box-shadow: 0px 0.1px 2px 0.9px #696666;
+    border: none;
+    font-size: 1rem;
+    height: 36px;
+    padding: 5px 10px 5px 20px;
+
+}
+form.create,
+form.create.bill {
+  max-width: 380px;
+}
+.f-col .input,
+.f-col input[type=text] {
+    margin-bottom: 20px;
+}
+
+#app a {
+    font-weight: bold;
+    text-shadow: 0px 0px 1px darkorange;
+}
+a:hover {
+    color: darkorange;
+}
+li {
+    list-style: none;
+}
+#grid_header {
+    border-bottom: 2px solid dodgerblue;
+    background: white;
+    padding: 0 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+#grid_header > .f-row {
+    align-items: center;
+    height: 40px;
+    justify-content: space-between;
+}
+#grid_nav .list {
+    display: flex;
+}
+#grid_nav .item {
+    flex: 1;
+}
+#app {
+    min-height: 50vh;
+    padding: 10px 20px 40px;
+    position: relative;
+    top: 42px;
+}
+#grid_footer {
+    justify-content: flex-end;
+    padding: 0 20px;
+    position: relative;
+    top: 42px;
+}
+.tabler {
+    margin-bottom: 40px;
+    min-width: 90%;
+}
+.tabler-btn {
+  border-style: solid;
+  border-width: 2px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.05rem;
+  padding: 8px;
+}
+
+.tabler.bills  {
+    white-space: nowrap;
+}
+
+.bill .tabler-btn {
+  border-color: dodgerblue;
+}
+.bill .tabler-btn:hover {
+  background: dodgerblue;
+}
+.update .tabler-btn {
+  border-color: #B4D455;
+}
+.delete .tabler-btn {
+  border-color: darkorange;
+}
+.update .tabler-btn:hover {
+  background: #B4D455;
+}
+.delete .tabler-btn:hover {
+  background: darkorange;
+}
+
+.tabler-btn:hover {
+  color: white;
+}
+
+.msg {
+  border-radius: .4rem;
+  box-shadow: -0.9px 0.1px 6.1px 0.2px #B4D455;
+  max-width: 380px;
+  padding: 20px;
+}
+
+form.bill:not(.is-active) {
+  display: none;
+}
+
+.is-hidden {
+    display: none;
+}
